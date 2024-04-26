@@ -99,7 +99,9 @@ public class Main {
                 }
                     break;
 
-                default:
+                default: {
+                    System.out.println("\nInvalid Number\n");
+                }
                     break;
             }
 

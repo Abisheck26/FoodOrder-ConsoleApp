@@ -28,7 +28,9 @@ public class FoodOrder {
             prawnCount=prawnCount-c.quantity;
             customers.put(c.orderCode, c);
         }
-        System.out.println("Your food ordered successfully\n");
+        System.out.println("Your food ordered successfully!");
+        System.out.println("Your order code is "+c.orderCode+"\n");
+
 
     }
 
@@ -37,12 +39,13 @@ public class FoodOrder {
             System.out.println("No orders");
         }
         else{
+            System.out.println("\nYour Orders list:");
             for(Customer c :customers.values()){
-                System.out.println("OrderCode:"+c.orderCode);
-                System.out.println("Name:"+c.name);
-                System.out.println("FoodType:"+c.foodType);
-                System.out.println("Quantity:"+c.quantity);
-                System.out.println("Address:"+c.address);
+                System.out.println("  OrderCode:"+c.orderCode);
+                System.out.println("  Name:"+c.name);
+                System.out.println("  FoodType:"+c.foodType);
+                System.out.println("  Quantity:"+c.quantity);
+                System.out.println("  Address:"+c.address+"\n");
             }
         }
     }
